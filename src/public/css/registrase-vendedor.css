@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(177, 117, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: white; 
+}
+
+.caja-login {
+    width: 600px;
+    height: 900px;
+    background-color: rgb(136, 91, 184);
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 320px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.boton {
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(116, 53, 184);
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: rgb(95, 39, 155);
+}
+
+.boton span {
+    margin-bottom: 30px;
+}
+
+.caja-login > * {
+    margin: 15px;
+}
+
+
+input,
+select,
+.input-imagen {
+    border-radius: 30px;
+    width: 450px;
+    height: 40px;
+    color: #888;
+    font-style: italic;
+    border: 1px black;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-imagen {
+    position: relative;
+}
+
+.input-imagen .contenido {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.input-imagen .texto {
+    font-size: 14px;
+
+}
+
+.input-imagen .imagen-container {
+    position: absolute;
+    left: 87%;
+}
+
+.input-imagen img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input-imagen:hover {
+    background-color: #ddd;
+}
+
+/* fotografia */    
+
+.input-imagen {
+    border-radius: 30px;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    align-items: center;
+    position: relative;
+}
+
+.input-imagen .contenido {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.input-imagen .texto {
+    font-size: 14px;
+}
+
+.input-imagen .imagen-container {
+
+    position: absolute;
+    left: 87%;
+}
+
+.input-imagen img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.input-imagen:hover {
+    background-color: #ddd;
+}
+
+
+.input-imagen,
+.boton {
+    margin-bottom: 40px; }

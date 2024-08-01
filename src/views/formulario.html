@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Formulario</h1>
+  <form action="/addCategory" method="POST">
+        <div class="name">
+          <label>Nombre</label>
+          <input type="text" name="colorName">
+        </div>
+    <div>
+      <label>Categoria del color</label>
+      <select name="ColorCategory" id="colorCategory">
+          <option value="Primario">Primario</option>
+          <option value="Secunadario">Secundario</option>
+          <option value="Terciario">Terciario</option>
+      </select>
+    </div>
+    <input type="submit" class="save" value="save" onclick="location.reload()">
+  </form>
+</body>
+</html>

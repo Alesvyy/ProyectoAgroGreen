@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../CSS/registrarseVen.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css" >
+</head>
+<body>
+
+<header class="header">
+       
+    <nav>
+       <ul class="nav-links">
+        <li><a href="/menu">Inicio</a></li>
+        <li><a href="/acerca">Sobre Nosotros</a></li>
+        <li><a href="#footer">Contáctenos</a></li>
+       </ul>            
+    </nav>
+ 
+    <div class="buscar">
+        <form class="search-form" action="#" method="GET">
+            <input type="text" placeholder="Buscar..." name="search">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+        </div>
+        
+    <div class="carrito1">
+        <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+       
+    </div>
+</header>
+
+
+
+
+
+
+        <div class="container">
+            <div class="form-content">
+                <img src="../Imagenes/vender-fruta.png" alt="Imagen" class="Form-img">
+                <div class="form">
+                    <br><br><br>
+                    <h2 class="Form-h2">Registro de Vendedor</h2>
+                    <form>
+                        <input type="text" placeholder="Nombre" class="Form-input">
+                        <input type="text" placeholder="Apellidos" class="Form-input">
+                        <select id="ID" name="ID" onchange="seleccionarOpcion()">
+                            <option value="" disabled selected hidden>Tipo de identificación</option>
+                            <option value="cedula">Cedula</option>
+                            <option value="pasaporte">Pasaporte</option>
+                        </select>
+                        <input type="text" placeholder="Identificación" class="Form-input">
+                        <input type="text" placeholder="Correo Electrónico" class="Form-input">
+                        <input type="text" placeholder="Contraseña" class="Form-input">
+                        <input type="text" placeholder="Verificación de contraseña" class="Form-input">
+
+                        <input type="text" placeholder="Permisos municipales" class="Form-input">
+                    
+                        <div class="input-imagen">
+                            <div class="contenido">
+                                <span class="texto">Fotografía</span>
+                                <input type="file" id="imagen" name="imagen" accept="image/*" style="display: none;">
+                            </div>
+                            <div class="imagen-container">
+                                <label for="imagen">
+                                    <img src="../Imagenes/subir.png" alt="Subir Imagen">
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <center>
+                            <button type="button" class="Form-button" onclick="redirectToLogin()">Registrarse</button>
+                    </center>
+                    </form>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+
+
+
+
+        <footer id="footer" class="footer">
+            <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+        
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                    <br>
+                    <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                    <br>
+                    <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+                </ul>
+            </div>
+            <div class="linea"></div>
+            <div class="sobre-nosotros">
+                <h3>Sobre Nosotros</h3>
+              
+                <ul>
+                <li><a href="/acerca"> • Nuestros Productos</a></li>
+                <br>
+                <li><a href="/acerca"> • Nuestras Categorias</a></li>
+                <br>
+                <li><a href="/acerca"> • Historia</a></li>
+            </ul>
+            </div>
+            <br>
+           
+        </footer>
+        <div class="pie-pagina">
+            <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+        </div>
+
+
+<script src="js/registrarse.js"></script>
+
+</body>
+</html>

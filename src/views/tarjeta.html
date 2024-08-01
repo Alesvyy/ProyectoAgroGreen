@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta</title>
+    <link rel="stylesheet" href="../CSS/tarjeta.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css" >
+</head>
+<body>
+    <header class="header">
+        
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="btn-container"> 
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+
+
+    <div class='container'>
+
+        <div class='credit-info'>
+            <div class='credit-info-content'>
+                <table class='half-input-table'>
+                    <tr>
+                        <td>Porfavor seleccioné su tarjeta: </td>
+                        <td>
+                            <div class='dropdown' id='card-dropdown'>
+                                <div class='dropdown-btn' id='current-card'>Visa</div>
+                                <div class='dropdown-select'>
+                                    <ul>
+                                        <li>Master Card</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                Número de Tarjeta
+                <input class='input-field' id='card-number' maxlength='19' placeholder='Digite su número de tarjeta' pattern='[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}' title='Debe contener solo 16 dígitos numéricos con guiones después de cada 4 dígitos' required></input>
+                Nombre
+                <input class='input-field' id='card-holder' maxlength='44' placeholder='Ingrese su nombre'></input>
+                <table class='half-input-table'>
+                    <tr>
+                        <td> Fecha de Caducidad
+                            <input class='input-field' id='expiry-date' maxlength='7' placeholder='MM-YYYY' pattern='^(0[1-9]|1[0-2])-(19|20)\d{2}$' title='Formato válido: MM-YYYY' required></input>
+                        </td>                        
+                        <td>CVC
+                            <input class='input-field' id='cvc' maxlength='3' placeholder='Digite su pin' pattern='[0-9]{3}' title='Debe contener solo 3 dígitos numéricos' required></input>
+                        </td>
+                    </tr>
+                </table>
+                
+      
+                
+                <a href='/envio' class='pay-btn-link' style='text-decoration: none; color: #fff;'>
+                    <button class='pay-btn'>
+                        Siguiente
+                    </button>
+                </a>
+                
+                
+
+            </div>
+
+        </div>
+    </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+    <footer id="footer" class="footer">
+        <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+    
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+            </ul>
+        </div>
+        <div class="linea"></div>
+        <div class="sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+          
+            <ul>
+            <li><a href="/acerca"> • Nuestros Productos</a></li>
+            <br>
+            <li><a href="/acerca"> • Nuestras Categorias</a></li>
+            <br>
+            <li><a href="/acerca"> • Historia</a></li>
+        </ul>
+        </div>
+        <br>
+       
+    </footer>
+    <div class="pie-pagina">
+        <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+    </div>
+
+
+<script src="js/tarjeta.js"></script>
+
+</body>
+</html>

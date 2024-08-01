@@ -1,0 +1,312 @@
+body {
+    background-color: #f2efe3;
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav a {
+    left: 0px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #04AA6D;
+}
+
+
+.topnav .cerrarSesion  {
+    
+    background-color: #28c3a9;
+    color: white;
+}
+
+
+
+
+.header{
+    background-color: #506b61;
+    width: 1300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    font-size: 17px;
+    position:relative;
+}
+.titulo{
+    position: relative;
+    top:75px;
+    right: 600px;
+}
+
+
+.salidamodulo .cerrarSesion{
+    float: right;
+    background-color: #28c3a9;
+    color: black;
+    width: 180px;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    top: 40px;
+    left: 80px;
+    position:relative;
+    border-radius: 35px;
+}
+
+.categoriasproducto{
+    display: block;
+    left: 300px;
+    top: 60px;
+    width: 150px;
+    height: 239px;
+    position:relative;
+    padding: 10px;
+
+}
+
+.registroproductos {
+   display: flex;
+   margin-left: 450px;
+   width: 400px;
+   height: 650px;
+   top:60px;
+   position: relative;
+   background-color: hsl(170, 66%, 46%);
+   padding-top: 20px;
+   text-align: center;
+   border-radius: 35px;
+
+   
+
+}
+
+.registrodatos {
+
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    border: 1px black;
+    background-color: white;
+    position: relative;
+    left: 100px;
+    
+}
+
+.input-imagen{
+    position: relative;
+    top:260px;
+    right: 20px;
+    
+    
+}
+
+.registro{
+    top: 60px;
+    display: flex;
+    position: relative;
+
+}
+
+
+.actualizardatos{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    background-color: #757575;
+    display: flex;
+    position: relative;
+    left: 180px;
+    top:50px;
+    color: aliceblue;
+    
+}
+
+.regresar{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    background-color: #757575;
+    display: flex;
+    position: relative;
+    right: 20px;
+    
+    color: aliceblue;
+    
+
+}
+
+.input-imagen img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    left: 10px;
+}
+.input-imagen {
+    border-radius: 30px;
+    width: 450px;
+    height: 40px;
+    color: #888;
+    font-style: italic;
+    border: 1px black;
+    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.input-imagen .texto {
+    font-size: 14px;
+
+}
+
+.input-imagen .imagen-container {
+    position: relative;
+    left: 80px;
+}
+.input-imagen:hover {
+    background-color: white;
+}
+
+.input-imagen {
+    border-radius: 20px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    top:300px;
+    right: 90px;
+
+}
+
+.input-imagen .contenido {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-align:inherit;
+}
+
+.input-imagen .texto {
+    font-size: 14px;
+}
+
+
+
+
+.input-imagen:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px;
+    padding: 5px 10px 20px;
+}
+
+.contacto,
+.sobre-nosotros {
+    width: calc(40% - 70px);
+    margin: 10px;
+    color: #ffffff;
+}
+
+.contacto h3,
+.sobre-nosotros h3 {
+    margin: 20px 10px 10px;
+}
+
+.contacto ul,
+.sobre-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.contacto ul li,
+.sobre-nosotros ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.contacto ul li a,
+.sobre-nosotros ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.contacto ul li a:hover,
+.sobre-nosotros ul li a:hover {
+    color: #348a29;
+}
+
+.linea {
+    border-left: 1px solid #ffffff;
+    height: 290px;
+    margin: 0 20px;
+}
+
+.sobre-nosotros p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+.logo-footer {
+    width: 145px;
+    height: 145px;
+}
+
+h3 {
+    color: #ffffff;
+    margin: 10px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.pie-pagina {
+    background-color: rgb(91, 91, 91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10px;
+}
+
+.pie-pagina p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}

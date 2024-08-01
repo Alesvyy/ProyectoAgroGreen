@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/lacteos.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <title>Lacteos</title>
+</head>
+
+<header class="header">
+       
+    <nav>
+       <ul class="nav-links">
+        <li><a href="/menu">Inicio</a></li>
+        <li><a href="/acerca">Sobre Nosotros</a></li>
+        <li><a href="#footer">Contáctenos</a></li>
+       </ul>            
+    </nav>
+ 
+    <div class="buscar">
+        <form class="search-form" action="#" method="GET">
+            <input type="text" placeholder="Buscar..." name="search">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <a class="btn" href="/login"><button id="btn_sesion" onclick="cerrarSesion()">Inicia Sesion</button></a>
+        </div>
+        
+    <div class="carrito1">
+        <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+       
+    </div>
+</header>
+
+<body>
+    
+    
+
+    <div class="TituloP">
+        <br>
+        <h1>Lacteos</h1>
+    </div>
+    
+    <% lacteos.forEach(registroproducto =>{ %> 
+        <tr> 
+        <td> <%= registroproducto.NombreProducto %> </td> 
+        <td> <%= registroproducto.categoria %> </td> 
+        <td> <%= registroproducto.unidadesDispo %> </td> 
+        <td> <%= registroproducto.precio %> </td> 
+        <td> <%= registroproducto.imagen %> </td> 
+        <th button onclick="location.reload()" class="editar" ></button></th>
+        </tr> 
+        <% }) %>
+
+        <div class="ordenar-seleccion">
+            <label for="ordenar">Ordenar:</label>
+            <select id="ordenar" name="ordenar" onchange="ordenarProductos()">
+                <option value="popularidad">Por popularidad</option>
+                <option value="menor-precio">Precio Menor a Mayor</option>
+                <option value="mayor-precio">Precio Mayor a Menor</option>
+            </select>
+        </div>
+        
+        
+        
+        
+        <div class="productos-fila arriba">
+            <div class="producto-container" data-producto="1" data-precio="4000">
+                <a href="/alimento" data-nombre="Naranja" data-imagenes="../Imagenes/naranja.jpg,../Imagenes/naranja2.jpg,../Imagenes/naranja3.jpg,../Imagenes/naranja4.jpg,../Imagenes/naranja5.jpg">
+                    <img class="producto-imagen" src="../Imagenes/leche.png" alt="Producto 1">
+                    <div class="producto-precio">₡4,000</div>
+                    <div class="producto-nombre">Leche</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+            <div class="producto-container" data-producto="2" data-precio="2000">
+                <a href="/alimento" data-nombre="Zanahoria" data-imagenes="../Imagenes/zanahoria.jpg,../Imagenes/zanahoria2.jpg,../Imagenes/zanahoria3.jpg,../Imagenes/zanahoria4.jpg,../Imagenes/zanahoria5.jpg">
+                    <img class="producto-imagen" src="../Imagenes/helado.png" alt="Producto 2">
+                    <div class="producto-precio" id="precio2">₡2,000</div>
+                    <div class="producto-nombre">Helado</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+        
+        
+        
+            <div class="producto-container" data-producto="3" data-precio="6000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/mantequilla.jpg" alt="Producto 3">
+                    <div class="producto-precio" id="precio3">₡6,000</div>
+                    <div class="producto-nombre">Mantequilla</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+            <div class="producto-container" data-producto="4" data-precio="1000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/QuesoCheddar.png" alt="Producto 4">
+                    <div class="producto-precio" id="precio4">₡1,000</div>
+                    <div class="producto-nombre">Queso Cheddar</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        </div>
+        
+        <div class="productos-fila">
+            <div class="producto-container" data-producto="5" data-precio="8000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/Natilla.png" alt="Producto 5">
+                    <div class="producto-precio" id="precio5">₡8,000</div>
+                    <div class="producto-nombre">Natilla</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+            <div class="producto-container" data-producto="6" data-precio="7000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/QuesoMozzarella.png" alt="Producto 6">
+                    <div class="producto-precio" id="precio6">₡7,000</div>
+                    <div class="producto-nombre">Queso Mozzarella</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+            <div class="producto-container" data-producto="7" data-precio="5000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/lecheCabra.png" alt="Producto 7">
+                    <div class="producto-precio" id="precio7">₡5,000</div>
+                    <div class="producto-nombre">Leche Cabra</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        
+            <div class="producto-container" data-producto="8" data-precio="3000">
+                <a href="/alimento">
+                    <img class="producto-imagen" src="../Imagenes/QuesoRoquefort.png" alt="Producto 8">
+                    <div class="producto-precio" id="precio8">₡3,000</div>
+                    <div class="producto-nombre">Queso Roquefort</div>
+                </a>
+                <a href="/carrito" class="agregar-btn">Agregar</a>
+            </div>
+        </div>
+        
+        <script src="js/productos.js"></script>
+
+        <br><br><br><br><br> <br><br><br><br><br>
+
+
+        <footer id="footer" class="footer">
+            <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+        
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                    <br>
+                    <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                    <br>
+                    <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+                </ul>
+            </div>
+            <div class="linea"></div>
+            <div class="sobre-nosotros">
+                <h3>Sobre Nosotros</h3>
+              
+                <ul>
+                <li><a href="/acerca"> • Nuestros Productos</a></li>
+                <br>
+                <li><a href="/acerca"> • Nuestras Categorias</a></li>
+                <br>
+                <li><a href="/acerca"> • Historia</a></li>
+            </ul>
+            </div>
+            <br>
+           
+        </footer>
+        <div class="pie-pagina">
+            <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+        </div>
+
+        <script src="js/header.js"></script>
+</body>
+</html>

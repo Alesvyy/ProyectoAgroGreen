@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../CSS/recuperar-contra.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+  
+</head>
+<body>
+    <header class="header">
+       
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+
+
+
+<form id = "recuperar_contra">
+    <div class="login-container">
+        <div class="login-content">
+            <h2 class="login-titulo">Recuperar de Contraseña</h2>
+           <p class="ingrese-correo"> Por favor, ingrese su Correo electronico para el cambio de contraseña
+            <input type="text" placeholder="Correo electronico" class="login-input" id="correo1">
+            <button type="submit" class="login-boton">Enviar</button>
+            <div class="login-enlaces">
+                <a href="/cambiar-contra" class="login-olvideContra">Cambiar contraseña</a>
+                <a href="/login" class="login-olvideContra">Regresar al inicio</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+    
+
+
+
+
+
+
+    <footer id="footer" class="footer">
+        <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+    
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+            </ul>
+        </div>
+        <div class="linea"></div>
+        <div class="sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+          
+            <ul>
+            <li><a href="/acerca"> • Nuestros Productos</a></li>
+            <br>
+            <li><a href="/acerca"> • Nuestras Categorias</a></li>
+            <br>
+            <li><a href="/acerca"> • Historia</a></li>
+        </ul>
+        </div>
+        <br>
+       
+    </footer>
+    <div class="pie-pagina">
+        <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "GKw7f_ixd75BQw5LG",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('recuperar_contra').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var correo1 = document.getElementById('correo1').value;
+                // these IDs from the previous steps
+                emailjs.sendForm('Recuperacion_de _contra', 'template_1x2y07d', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>

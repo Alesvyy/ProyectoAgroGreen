@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css" >
+</head>
+<body>
+    <header class="header">
+       
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+
+ 
+    <div class="login-container">
+        <div class="login-content">
+            <form action="/authenticate" method="POST" class="formulario">
+            <h2 class="login-titulo">Iniciar Sesión</h2>
+            <img src="Imagenes/ag (3).png" alt="Imagen de perfil" class="login-imagen">
+            <input type="number" id="identificacion" name="identificacion" placeholder="Numero de identificación" class="login-input">
+            <input type="password" id="password" name="password" placeholder="Contraseña" class="login-input"> 
+                      
+            <button class="login-boton"input type="submit" value="Login">Iniciar Sesión</button>
+            </form>
+            <div class="login-enlaces">
+                <a href="/recuperar-contra" class="login-olvideContra">Olvidé mi contraseña</a>
+                <a href="/registro" class="login-registro">¿No tienes una cuenta? Regístrate</a>
+            </div>
+           
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+<footer id="footer" class="footer">
+    <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+
+    <div class="contacto">
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+            <br>
+            <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+            <br>
+            <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+        </ul>
+    </div>
+    <div class="linea"></div>
+    <div class="sobre-nosotros">
+        <h3>Sobre Nosotros</h3>
+      
+        <ul>
+        <li><a href="/acerca"> • Nuestros Productos</a></li>
+        <br>
+        <li><a href="/acerca"> • Nuestras Categorias</a></li>
+        <br>
+        <li><a href="/acerca"> • Historia</a></li>
+    </ul>
+    </div>
+    <br>
+   
+</footer>
+<div class="pie-pagina">
+    <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+</div>
+
+
+<script src="js/login.js"></script>
+
+</body>
+</html>

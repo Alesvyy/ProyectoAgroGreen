@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../CSS/registrarse2.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/menu">Inicio</a></li>
+                <li><a href="/acerca">Sobre Nosotros</a></li>
+                <li><a href="#footer">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+        </div>
+
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt="Carro de compras"></a>
+
+        </div>
+    </header>
+
+    <div class="caja-login">
+        <form action="/formularioregistro" class="formulario" id="formulario" method="POST">
+
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label class="formulario__label">Nombre del Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i> <!-- icono -->
+                </div>
+                <p class="formulario__input-error">El usuario debe tener minimo 3 caracteres y solo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__primerapellido">
+                <label class="formulario__label">Primer Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="primerapellido" id="primerapellido"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__segundoapellido">
+                <label class="formulario__label">Segundo Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="segundoapellido" id="segundoapellido"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+            <br>
+            <div class="tipo-de-identificacion" id="tipo-de-identificacion">
+                <select id="IDidentificacion" name="IDidentificacion" onchange="seleccionarOpcion()">
+                    <option value="" disabled selected hidden>Tipo de identificación</option>
+                    <option value="cedula">Cedula</option>
+                    <option value="cedulaextrangero">Dimex</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__identificación">
+                <label class="formulario__label">Identificación</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="identificacion" id="identificacion"
+                        placeholder="">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El número debe tener 9 digitos</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="telefono" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="Teléfono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El número debe tener 10 digitos</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números,
+                    letras y guión bajo.</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__password">
+                <label class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos con al menos un numero, una consonante y un caracter especial"$,@,#".</p>
+            </div>
+            <br>
+            <div class="formulario__grupo" id="grupo__password2">
+                <label class="formulario__label">Repetir la contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña no coincide</p>
+            </div>
+            <br>
+            <div class="input-imagen">
+                <div class="contenido">
+                    <span class="texto">Fotografía</span>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" style="display: none;">
+                </div>
+                <div class="imagen-container">
+                    <label for="imagen">
+                        <img src="../Imagenes/subir.png" alt="Subir Imagen">
+                    </label>
+                </div>
+            </div>
+
+            <div class="tipo-de-usuario" id="tipo-de-usuario">
+                <select id="IDusuario" name="IDusuario" onchange="seleccionarOpcion()">
+                    <option value="" disabled selected hidden>Tipo de Usuario</option>
+                    <option value="vendedor">Vendedor</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="administrador">Adiministrador</option>
+                </select>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    <b class="formulario__span">Acepto los términos y condiciones</b>
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente
+                </p>
+                <input class="formulario__btn" type="submit" value="Enviar">
+            </div>
+        </form>
+
+    </div>
+
+
+
+<br><br><br><br>
+
+
+
+
+
+
+<footer id="footer" class="footer">
+    <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+
+    <div class="contacto">
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+            <br>
+            <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+            <br>
+            <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+        </ul>
+    </div>
+    <div class="linea"></div>
+    <div class="sobre-nosotros">
+        <h3>Sobre Nosotros</h3>
+      
+        <ul>
+        <li><a href="/acerca"> • Nuestros Productos</a></li>
+        <br>
+        <li><a href="/acerca"> • Nuestras Categorias</a></li>
+        <br>
+        <li><a href="/acerca"> • Historia</a></li>
+    </ul>
+    </div>
+    <br>
+   
+</footer>
+<div class="pie-pagina">
+    <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+</div>
+
+
+    <script src="js/registro1.js"></script>
+
+</body>
+
+</html>

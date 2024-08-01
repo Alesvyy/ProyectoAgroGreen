@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+
+body {
+    background-color: #f2efe3;
+}
+
+.header{
+    background-color: #205737;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10px;
+}
+
+.header .logo1{
+    cursor: pointer;
+}
+
+.header .logo1 img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo1 img:hover{
+    transform: scale(1.2);
+}
+.header .carrito1{
+    cursor: pointer;
+}
+
+.header .carrito1 img{
+    height: 35px;
+    width: auto;
+    transition: all 0.3s;
+    margin: 15px;
+}
+.header .carrito1 img:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.03);
+}
+
+.header .nav-links a{
+    font-size: 19px;
+    color: #ffff;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: white;
+}
+
+.header .btn-container {
+    padding: 22px 25px;
+}
+
+.header .btn button{
+    font-weight: 500;
+    font-size: 20px;
+    color: #1b3039;
+    padding: 5px 14px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #205737;
+    transform: scale(1.03);
+}
+
+.header .buscar  {
+    margin-left: auto;
+}
+
+
+.buscar .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    
+}
+
+.search-form button {
+    padding: 6px 16px;
+    background-color: #205737;
+    color: #fff;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #1b3039;
+}
+
+.perfil{
+    padding: 6px 16px;
+    background-color: #205737;
+    color: #fff;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.perfil:hover {
+    background-color: #1b392a;
+}
+
+.perfil a{
+    text-decoration: none;
+    color: white;
+}

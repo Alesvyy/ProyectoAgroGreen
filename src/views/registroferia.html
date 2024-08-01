@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/registroferia.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css" >
+    <title>Registro de Feria</title>
+</head>
+<body>
+   
+    <header class="header">
+       
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+     
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+
+    <div class="registroproductos">
+        <div class="registrodatos">
+            <p class="titulo">Registro de Feria</p>
+            <br><br>
+
+              <form action="/registroferia" class="formulario" id="formulario" method="POST">
+              <input class="NombreProducto" type="text" placeholder="Nombre de la feria" name="nombreferia">
+              <br><br>
+              <p class="cateTexto">Dia de la Feria</p>
+              <br>
+              <input class="diaFeria" type="date" name="diaferia">
+              <br><br>
+
+              <select class="categoria" name="provincia" placeholder="Provincia">
+                <option value="">Provincia</option>
+                  <option value="San Jose">1- San Jose</option>
+                  <option value="Alajuela">2- Alajuela</option>
+                  <option value="Cartago">3- Cartago</option>
+                  <option value="Heredia">4- Heredia</option>
+                  <option value="Guanacaste">5- Guanacaste</option>
+                  <option value="Puntarenas">6- Puntarenas</option>
+                  <option value="Limon">7- Limon</option>
+                </select> 
+                <br><br>
+                <select class="categoria" name="canton" placeholder="Provincia">
+                    <option value="">Canton</option>
+                      <option value="San Jose">1- San Jose</option>
+                      <option value="Alajuela">2- Alajuela</option>
+                      <option value="Cartago">3- Cartago</option>
+                      <option value="Heredia">4- Heredia</option>
+                      <option value="Guanacaste">5- Guanacaste</option>
+                      <option value="Puntarenas">6- Puntarenas</option>
+                      <option value="Limon">7- Limon</option>
+                    </select>
+                    <br><br>
+                    <select class="categoria" name="distrito" placeholder="Provincia">
+                        <option value="">Distrito</option>
+                          <option value="San Jose">1- San Jose</option>
+                          <option value="Alajuela">2- Alajuela</option>
+                          <option value="Cartago">3- Cartago</option>
+                          <option value="Heredia">4- Heredia</option>
+                          <option value="Guanacaste">5- Guanacaste</option>
+                          <option value="Puntarenas">6- Puntarenas</option>
+                          <option value="Limon">7- Limon</option>
+                        </select>
+
+
+                
+
+                <div class="contenedor-botones">
+                    <button onclick="location.reload()" class="boton-regresar">Regresar</button>
+                    <button onclick="location.reload()" class="boton-guardar">Guardar</button>
+                </div>
+
+                </form>
+                <script src="js/registro-productos.js"></script>
+
+        
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+    
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+            </ul>
+        </div>
+        <div class="linea"></div>
+        <div class="sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+          
+            <ul>
+            <li><a href="/acerca"> • Nuestros Productos</a></li>
+            <br>
+            <li><a href="/acerca"> • Nuestras Categorias</a></li>
+            <br>
+            <li><a href="/acerca"> • Historia</a></li>
+        </ul>
+        </div>
+        <br>
+       
+    </footer>
+    <div class="pie-pagina">
+        <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+    </div>
+
+</body>
+</html>

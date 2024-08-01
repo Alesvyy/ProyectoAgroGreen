@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro-feria-admin.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <title>Registro de Tramos Vendedor</title>
+</head>
+
+<body>
+
+    <header class="header">
+       
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+     
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+    
+ 
+    <div class="registroproductos">
+      
+        <div class="opciones">
+            <div class="opcion-container">
+                <BR><BR></BR>
+                <img src="../Imagenes/perfiles.png">
+                <a href="solicitud-admin-tabla">Solicitudes</a>
+            </div>
+    
+    
+        <div class="opcion-container">
+            <BR><BR></BR>
+            <img src="../Imagenes/registro.png">
+            <a href="registro-feria-admin">Registro de feria</a>
+        </div>
+    
+    
+            <div class="opcion-container">
+                <BR><BR></BR>
+                <img src="Imagenes/solicitud-de-cotizacion.png">
+                <a href="registro-producto-admin-tabla">Registro de productos</a>
+            </div>
+    
+            <div class="opcion-container">
+                <BR><BR></BR>
+                <img src="../Imagenes/analitica.png">
+                <a href="reportes-admin-tabla">Reportes</a>
+            </div>
+    
+            <div class="opcion-container">
+                <BR><BR></BR>
+                <img src="../Imagenes/verduras3.png">
+                <a href="registrotramo-tabla">Tramos</a>
+            </div>
+    
+    
+            <div class="opcion-container">
+                <BR><BR></BR>
+                <img src="../Imagenes/fecha-limite-de-la-tarea.png">
+                <a href="lista-total-productos-admin">Lista total de productos</a>
+            </div>
+    
+                <div class="opcion-container">
+                    <BR><BR></BR>
+                    <img src="../Imagenes/lista-de-tareas (1).png">
+                    <a href="lista-total-tramos-admin">Lista total de tramos</a>
+                </div>
+
+
+    </div>
+
+
+
+    <div class="caja-info">
+
+        <div class="contenedor-botones">
+
+            <button onclick="location.reload()" class="actualizardatos">Nuevo</button> 
+            <br> <br>
+
+            <button onclick="location.reload()" class="remover ">Remover</button> 
+    </div>
+   
+<br><br><br>
+        <div class="tablaproducto">
+            <table>
+                <tr>
+                  <th  class="cate">Nombre de la feria</th>
+                  <th  class="cate">Fecha de la feria</th>
+                  <th class="cate">Provincia</th>
+                  <th class="cate">Canton</th>
+                  <th class="cate">Distrito</th>
+                
+                
+                  
+                </tr>
+                <% registroferias.forEach(registroferia =>{ %> 
+                    <tr> 
+                    <td> <%= registroferia.nombreferia %> </td> 
+                    <td> <%= registroferia.diaferia %> </td> 
+                    <td> <%= registroferia.provincia %> </td> 
+                    <td> <%= registroferia.canton %> </td> 
+                    <td> <%= registroferia.distrito %> </td> 
+                    <th button onclick="location.reload()" class="editar" ></button></th>
+                    </tr> 
+                    <% }) %>
+                    
+                   
+             
+            </table>
+            </div>    
+        
+
+    </div>
+    </div>
+
+
+    <script src="js/modelo_vendedor.js"></script>
+
+    <footer id="footer" class="footer">
+        <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+    
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+            </ul>
+        </div>
+        <div class="linea"></div>
+        <div class="sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+          
+            <ul>
+            <li><a href="/acerca"> • Nuestros Productos</a></li>
+            <br>
+            <li><a href="/acerca"> • Nuestras Categorias</a></li>
+            <br>
+            <li><a href="/acerca"> • Historia</a></li>
+        </ul>
+        </div>
+        <br>
+       
+    </footer>
+    <div class="pie-pagina">
+        <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+    </div>
+    
+
+</body>
+
+</html>

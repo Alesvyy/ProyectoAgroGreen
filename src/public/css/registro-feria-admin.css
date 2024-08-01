@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+
+body {
+    background-color: #f2efe3;
+}
+
+.header {
+    background-color: #205737;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10px;
+}
+
+.header .logo1 {
+    cursor: pointer;
+}
+
+.header .logo1 img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo1 img:hover {
+    transform: scale(1.2);
+}
+
+.header .carrito1 {
+    cursor: pointer;
+}
+
+.header .carrito1 img {
+    height: 35px;
+    width: auto;
+    transition: all 0.3s;
+    margin: 15px;
+}
+
+.header .carrito1 img:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.03);
+}
+
+.header .nav-links a {
+    font-size: 19px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: white;
+}
+
+.header .btn-container {
+    padding: 22px 25px;
+}
+
+.header .btn button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #1b3039;
+    padding: 5px 14px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #205737;
+    transform: scale(1.03);
+}
+
+.header .buscar {
+    margin-left: auto;
+}
+
+
+.buscar .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+}
+
+.search-form button {
+    padding: 6px 16px;
+    background-color: #205737;
+    color: #fff;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #1b3039;
+}
+
+
+
+
+
+
+
+
+.registroproductos {
+    background-color: #ded7c9;
+    width: 1300px;
+    height: 745px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 35px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.contenedor-flex {
+    display: flex;
+}
+
+.opciones {
+    background-color: #205737;
+    width: 340px;
+    height: 745px;
+    margin-right: 20px;
+    border-radius: 20px 20px;
+}
+
+.opcion-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: -3px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.opcion-container:hover {
+    background-color: #163d26;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.opcion-container img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.opcion-container a {
+    margin-left: 10px;
+    width: calc(100% - 10px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: bold;
+    color: white;
+}
+
+.caja-info {
+    background-color: gray;
+    width: 935px;
+    height: 700px;
+    margin: 8px 15px 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+    margin-left: 20px;
+
+}
+
+.actualizardatos,
+.remover {
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    margin-left: 20px;
+}
+
+.actualizardatos {
+    background-color: #28a745;
+    color: white;
+
+}
+
+.remover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.editar {
+
+    padding: 22px 25px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    border: 88px#0fbd09;
+    background-color: #218618;
+    color: white;
+    border: 88px#000000;
+    background-image: url('../Imagenes/editar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.b {
+    text-decoration: none;
+    color: #000;
+}
+
+.cate {
+    background-color: #205737;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: -80px;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
+td,
+th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tablaproducto {
+    position: relative;
+    top: 50px;
+    margin-right: 40px;
+
+}
+
+
+.footer {
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px;
+    padding: 5px 10px 20px;
+}
+
+.contacto,
+.sobre-nosotros {
+    width: calc(40% - 70px);
+    margin: 10px;
+    color: #ffffff;
+}
+
+.contacto h3,
+.sobre-nosotros h3 {
+    margin: 20px 10px 10px;
+}
+
+.contacto ul,
+.sobre-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.contacto ul li,
+.sobre-nosotros ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.contacto ul li a,
+.sobre-nosotros ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.contacto ul li a:hover,
+.sobre-nosotros ul li a:hover {
+    color: #348a29;
+}
+
+.linea {
+    border-left: 1px solid #ffffff;
+    height: 290px;
+    margin: 0 20px;
+}
+
+.sobre-nosotros p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+.logo-footer {
+    width: 145px;
+    height: 145px;
+}
+
+h3 {
+    color: #ffffff;
+    margin: 10px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.pie-pagina {
+    background-color: rgb(91, 91, 91);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10px;
+}
+
+.pie-pagina p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}

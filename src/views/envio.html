@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/envio.css">
+    <link rel="icon" href="../Imagenes/Ag_Icon.ico">
+    <title>Ubicacion</title>
+</head>
+<body>
+    
+    <header class="header">
+       
+        <nav>
+           <ul class="nav-links">
+            <li><a href="/menu">Inicio</a></li>
+            <li><a href="/acerca">Sobre Nosotros</a></li>
+            <li><a href="#footer">Contáctenos</a></li>
+           </ul>            
+        </nav>
+     
+        <div class="buscar">
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    
+        <div class="btn-container">
+            <a class="btn" href="/login"><button>Inicia Sesion</button></a>
+            </div>
+            
+        <div class="carrito1">
+            <a href="/carrito"><img src="/Imagenes/carrito-de-compras (2).png" alt= "Carro de compras" ></a>
+           
+        </div>
+    </header>
+
+
+    <br><br><br><br>
+
+    <div class="contenedorUbicacion">
+        <h1>Método de Envío</h1>
+        <br><br>
+        <form>
+            <label for="provinciaSelect">Provincia:</label>
+            <select id="provinciaSelect" name="provincia" class="Form-input">
+                <option value="">Seleccionar Provincia</option>
+                <option value="san_jose">San José</option>
+                <option value="alajuela">Alajuela</option>
+                <option value="cartago">Cartago</option>
+                <option value="heredia">Heredia</option>
+                <option value="guanacaste">Guanacaste</option>
+                <option value="puntarenas">Puntarenas</option>
+                <option value="limon">Limon</option>
+            </select>
+        
+            <label for="cantonSelect">Canton</label>
+            <select id="cantonSelect" name="canton" class="Form-input">
+                <option value="">Seleccione un Cantón</option>
+            </select>
+
+            <label for="distritoSelect">Distrito</label>
+            <select id="distritoSelect" name="distrito" class="Form-input">
+                <option value="">Seleccione un Distrito</option>
+            </select>
+<label for="codigopostal">Codigo Postal</label>
+            <input type="number" class="Form-input">
+        </form>
+        <br>
+        <hr>
+        <br>
+        <h2>Reseña</h2>
+        <h3 style="color: rgb(177, 0, 0);">(opcional)</h3>
+        <br>
+
+        <div class="review-item">
+            <div class="review">
+                <div class="info">
+               
+                <div class="stars" onclick="updateRating()">
+                            <div class="rating-number">0</div>
+                        <input type="radio" id="star1" name="rating" value="5"><label for="star1">&#9733;</label>
+         
+                        <input type="radio" id="star2" name="rating" value="4"><label for="star2">&#9733;</label>
+             
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                    
+                        <input type="radio" id="star4" name="rating" value="2"><label for="star4">&#9733;</label>
+                        
+                        <input type="radio" id="star5" name="rating" value="1"><label for="star5">&#9733;</label>
+                    
+                  
+                </div>
+            </div>
+            <p class="calificadoColor" id="calificado">Será calificado él: </p>
+            <br>
+            <input type="text" placeholder="¿Que opinas?" class="Form-input">
+            <br>
+        </div>
+    </div>
+
+
+
+   
+    <hr>
+    <br>
+
+    <a href="/procesando" class="btn-finalizar">Finalizar</a>
+
+    </div>
+    
+    
+    <br><br><br><br>
+
+
+
+    <footer id="footer" class="footer">
+        <img src="Imagenes/ag (3).png" alt="Logo" class="logo-footer">
+    
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="/acerca"><img src="../Imagenes/whatsapp.png" alt="Whatsapp" class="icono">+ 506 5134-8528</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/instagram.png" alt="Instagram" class="icono">@DreamTechCR</a></li>
+                <br>
+                <li><a href="/acerca"><img src="../Imagenes/gorjeo.png" alt="Twitter" class="icono">@Dream_Tech</a></li>
+            </ul>
+        </div>
+        <div class="linea"></div>
+        <div class="sobre-nosotros">
+            <h3>Sobre Nosotros</h3>
+           
+            <ul>
+            <li><a href="/acerca"> • Nuestros Productos</a></li>
+            <br>
+            <li><a href="/acerca"> • Nuestras Categorias</a></li>
+            <br>
+            <li><a href="/acerca"> • Historia</a></li>
+        </ul>
+        </div>
+        <br>
+       
+    </footer>
+    <div class="pie-pagina">
+        <p> &copy;2024 DreamTech. Todos los derechos reservados.</p>
+    </div>
+    
+    
+    <script src="js/envio.js"></script>
+    
+
+</body>
+</html>

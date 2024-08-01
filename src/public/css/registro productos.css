@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; 
+    color: #ffffff;
+}
+
+
+
+body {
+    background-color: #e4e5e6;
+}
+
+.header{
+    background-color: #205737;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 5px 10px;
+}
+
+.header .logo1{
+    cursor: pointer;
+}
+
+.header .logo1 img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo1 img:hover{
+    transform: scale(1.2);
+}
+.header .carrito1{
+    cursor: pointer;
+}
+
+.header .carrito1 img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .carrito1 img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #ffff;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: white;
+}
+
+.header .btn-container {
+    padding: 12px 25px;
+}
+
+.header .btn button{
+    font-weight: 600;
+    color: #1b3039;
+    padding: 10px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #205737;
+    transform: scale(1.1);
+}
+
+.header .buscar  {
+    margin-left: auto;
+}
+
+
+.buscar .search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-form input[type="text"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    
+}
+
+.search-form button {
+    padding: 8px 20px;
+    background-color: #205737;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #1b3039;
+}
+
+
+.NombreProducto {
+    padding: 10px 150px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+   
+}
+
+.NombreProducto::placeholder{
+    text-align: left;
+}
+
+
+
+.cateTexto {
+   
+    font-size: 20px;
+    font-style: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.categoria {
+    padding: 10px 210px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.categoria::placeholder {
+    text-align: left;
+}
+
+
+
+
+
+
+.unidadesDispo {
+    padding: 10px 150px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+   
+}
+
+.unidadesDispo::placeholder{
+    text-align: left;
+}
+
+
+
+.precio {
+    padding: 10px 150px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+   
+}
+
+.precio::placeholder{
+    text-align: left;
+}
+
+
+.cateTexto1 {
+   
+    font-size: 20px;
+    font-style: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+
+
+.input-imagen {
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    /* Aplicando estilos de .NombreProducto */
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.input-imagen .contenido {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex: 1; /* Para que el contenido se expanda y la imagen se alinee al centro */
+}
+
+.input-imagen .texto {
+    font-size: 14px;
+}
+
+.input-imagen .imagen-container {
+    margin-left: auto;
+}
+
+.input-imagen img {
+    width: 30px; /* Ajusta el ancho de la imagen según necesites */
+    height: 30px; /* Ajusta el alto de la imagen según necesites */
+    border-radius: 10px;
+    margin-left: auto; /* Mover la imagen al extremo derecho */
+    margin-right: 10px; /* Añadir un margen derecho para separar del texto */
+}
+
+.input-imagen:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para el placeholder */
+.input-imagen::placeholder {
+    text-align: left;
+}
+
+/* Estilo cuando el input está enfocado */
+.input-imagen:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo cuando se pasa el mouse sobre el input */
+.input-imagen:hover::before {
+    background: #0056b3;
+}
+
+/* Estilo cuando se pasa el mouse sobre el input */
+.input-imagen:active::before {
+    background: #0056b3;
+}
+
+/* Estilo cuando se pasa el mouse sobre el input */
+.input-imagen:focus::before {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.boton-regresar,
+.boton-guardar {
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+.boton-regresar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.boton-guardar {
+    background-color: #28a745;
+    color: white;
+}
+
+.boton-regresar:hover {
+    background-color: #c82333; /* Color ligeramente más oscuro al hacer hover */
+}
+
+.boton-guardar:hover {
+    background-color: #218838; /* Color ligeramente más oscuro al hacer hover */
+}
+
+ 
+.registroproductos {
+    background-color: #568281;
+    width: 1250px;
+    height: 1400px;
+    margin: 70px auto; /* Margen superior e inferior de 20px, y centrado horizontal con 'auto' */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 50px;
+    font-style: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.footer{
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 258px;
+    padding: 5px 10px 20px;
+   
+}
+
+.contacto,
+.sobre-nosotros {
+    width: calc(40% - 70px);
+    margin: 10px;
+    color: #ffffff;
+}
+
+.contacto h3,
+.sobre-nosotros h3 {
+    margin: 10px;
+}
+
+.contacto ul,
+.sobre-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.contacto ul li,
+.sobre-nosotros ul li {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.contacto ul li a,
+.sobre-nosotros ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto ul li a:hover,
+.sobre-nosotros ul li a:hover {
+    color: #348a29;
+}
+
+.linea {
+    border-left: 1px solid #ffffff;
+    height: 310px;
+    margin: 0 20px;
+}
+
+.sobre-nosotros p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+.logo-footer {
+    width: 150px;
+    height: 150px;
+}
+
+h3{
+    color: #ffffff;
+    margin: 10px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.pie-pagina {
+    background-color:  rgb(97, 97, 97);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 10px; 
+    
+}
+
+.pie-pagina p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+
+/*--Validacion de estados--*/
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #29ee0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #ee0f0f;
+}
+
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #ee0f0f;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 1px solid #ee0f0f;
+    
+}
+
+/*--Formulario--*/
+
+.formulario__mensaje-exito {
+
+    display: none;
+    color: #20b80c;
+}
+
+.formulario__mensaje {
+    display: none;
+   
+    background: #f00;
+    text-align: center;
+}
+
+.formulario__input {
+    color: black
+}
+
+.formulario__btn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+.formulario__btn:hover {
+    background: #035f22;
+}
+
+.formulario__checkbox{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+
+}
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+.formulario__input:focus {
+    box-shadow: 0 0 5px #035f22;
+}
+
+
+
